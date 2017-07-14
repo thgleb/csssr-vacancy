@@ -1,12 +1,12 @@
 mixin checkbox()
 	label.checkbox(class=attributes.class ? attributes.class : null)
-		input(
+		input.checkbox__control(
 			type='checkbox'
 			name=attributes.name ? attributes.name : null
 			value=attributes.value ? attributes.value : null
 			checked=attributes.checked ? attributes.checked : null
 			disabled=attributes.disabled ? attributes.checked : null
-		).checkbox__control
+		)
 
 		span.checkbox__tick ☑
 

@@ -25,7 +25,7 @@ mixin profile(data)
 		+e.cb-area
 			each skill, index in data.skills
 				+e.cb
-					+checkbox(name="skills[]" value=index checked=skill.value) #{skill.title}
+					+checkbox(name="skills[]" value=index checked=skill.value) !{skill.title}
 
 		h2 Уровень владения JavaScript
 

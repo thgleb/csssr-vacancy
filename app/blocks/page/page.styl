@@ -1,0 +1,16 @@
+.page
+    background url(/page-bg.jpg)
+
+    max-width $page-max-width
+    min-height 100vh
+
+    margin-x(auto)
+    padding-x($page-padding_desktop)
+
+    box-sizing border-box
+
+    @media (max-width: $page-max-width)
+        padding-x($page-padding_tablet)
+
+    @media (max-width: 525px)
+        padding-x($page-padding_mobile)

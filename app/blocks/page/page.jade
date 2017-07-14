@@ -1,3 +1,4 @@
 mixin page()
-	+b('body').page&attributes(attributes)
-		block
+	+b('body')
+		+b.page&attributes(attributes)
+			block

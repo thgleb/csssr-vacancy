@@ -1,0 +1,10 @@
+mixin input()
+	if attributes.state
+		- var className = "input__control-container_" + attributes.state;
+
+	+b.input
+		+e('label').label
+			block
+
+		+e.control-container(class=className)
+			+e('input').control&attributes(attributes)

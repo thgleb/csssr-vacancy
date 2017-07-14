@@ -35,22 +35,10 @@ head
 
 	link(rel='manifest' href='/manifest.json')
 
-	meta(name='application-name' content=pageTitle || '')
-	meta(name='msapplication-tooltip' content=pageDescription || '')
-	meta(name='msapplication-TileColor' content='#ffffff')
-	meta(name='msapplication-TileImage' content='/mstile-large.png')
-	meta(name='msapplication-starturl' content='https://csssr.github.io/csssr-project-template/')
-	meta(name='msapplication-tap-highlight' content='no')
-	meta(name='msapplication-square70x70logo' content='/mstile-small.png')
-	meta(name='msapplication-square150x150logo' content='/mstile-medium.png')
-	meta(name='msapplication-wide310x150logo' content='/mstile-wide.png')
-	meta(name='msapplication-square310x310logo' content='/mstile-large.png')
-
-	//- http://realfavicongenerator.net/faq#why_ico_not_declared
-
 	block head
 	title= pageTitle || ''
 	meta(name='description' content=pageDescription || '')
 	meta(name='keywords' content=pageKeywords || '')
 
+	link(href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic')
 	link(href='/assets/styles/app.min.css' rel='stylesheet')

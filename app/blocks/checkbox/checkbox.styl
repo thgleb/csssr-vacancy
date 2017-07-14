@@ -1,0 +1,35 @@
+.checkbox
+	font-size 21px
+	font-weight bold
+
+	cursor pointer
+
+	display inline-flex
+	align-items baseline
+
+	padding 3px 0
+
+	@media (max-width: 726px)
+		font-size 18px
+
+	@media (max-width: 425px)
+		font-size 15px
+
+.checkbox__control
+	display none
+
+.checkbox__tick
+	sprite($checkbox)
+
+	margin-right 5px
+
+	position relative
+	top -7px
+
+	flex-shrink 0
+
+	line-height 25px
+	text-indent -99999px
+
+.checkbox__control:checked + .checkbox__tick
+	sprite($checkbox_checked)

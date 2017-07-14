@@ -1,0 +1,13 @@
+mixin radio()
+	label.radio(class=attributes.class ? attributes.class : null)
+		input(
+			type='radio'
+			name=attributes.name ? attributes.name : null
+			value=attributes.value ? attributes.value : null
+			checked=attributes.checked ? attributes.checked : null
+			disabled=attributes.disabled ? attributes.checked : null
+		).radio__control
+
+		span.radio__tick 🔘
+
+		block

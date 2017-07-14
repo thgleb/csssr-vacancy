@@ -1,0 +1,16 @@
+mixin range(data)
+	+b.range
+		+e.INPUT(
+			type='range'
+
+			step=1
+			min=0
+			max=(data.options.length - 1)
+			
+			value=data.value
+		).control
+
+		+e.visual
+			each val, index in data.options
+				+e.visual-option(data-value=index, data-checked=(index === data.value))
+					+e('button').visual-button !{val}

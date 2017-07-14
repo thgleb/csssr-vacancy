@@ -1,0 +1,75 @@
+.input
+    display flex
+    align-items flex-end
+
+    margin-top 10px
+
+    @media (max-width: $page-max-width)
+        flex-direction column
+        align-items flex-start
+
+        margin-top 30px
+
+.input__label
+    flex-shrink 0
+
+    color #2f1b15
+
+    font-size 22.43px
+    font-weight bold
+
+    margin 0 20px 5px 0
+
+    @media (max-width: $page-max-width)
+        margin-bottom 15px
+
+    @media (max-width: 726px)
+        font-size 18px
+
+        margin-bottom 5px
+
+    @media (max-width: 425px)
+        font-size 15px
+
+.input__control-container
+    width 100%
+    flex 1
+
+    &::after
+        sprite($control_line)
+
+        content ''
+
+        display block
+
+        width auto
+        height 10px
+
+        background-position left bottom
+
+.input__control
+    width 100%
+
+    font 30px Courier New, Courier, monospace
+
+    background none
+    border none
+
+    color #000
+
+    &[readonly]
+    &:disabled
+        color #000
+
+    padding 0 10px
+    height 40px
+
+    @media (max-width: 726px)
+        font-size 22px
+
+    @media (max-width: 425px)
+        font-size 18px
+
+.input__control-container_default
+    flex initial
+    width auto

@@ -33,7 +33,7 @@ gulp.task('templates', () => (
 			wrapLineLength: 120,
 			maxPreserveNewlines: 50,
 			wrapAttributesIndentSize: 1,
-			unformatted: ['use']
+			unformatted: ['use', 'textarea']
 		})))
 		.pipe(gulpIf(process.env.NODE_ENV === 'production', staticHash({
 			asset: 'dist',

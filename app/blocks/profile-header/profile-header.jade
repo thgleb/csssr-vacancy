@@ -1,0 +1,9 @@
+mixin profile-header()
+	+b('header').profile-header&attributes(attributes)
+		+e.logotype
+			+logotype(href='/')
+
+		+e.topsecret
+			+topsecret
+
+		block

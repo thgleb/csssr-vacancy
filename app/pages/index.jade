@@ -1,6 +1,20 @@
+include ../blocks/logotype/logotype
+include ../blocks/topsecret/topsecret
+
+include ../blocks/profile-header/profile-header
+include ../blocks/profile-heading/profile-heading
+
+include ../blocks/profile/profile
+
+include ../data/profile.json
+
 extends /blocks/layout-default/layout-default
 
 block head
-	- var pageTitle = 'CSSSR Project Template';
+	- var pageTitle = 'CSSSR Вакансия';
 
 block content
+	+profile-header
+	+profile-heading
+
+	+profile(getData("profile"))
